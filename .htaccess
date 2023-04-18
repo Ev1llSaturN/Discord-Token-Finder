@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^/?discordtokenfinder /discordidsorgu.php
+
+
+ErrorDocument 403 /404/access/
+ErrorDocument 404 /404/
+DirectoryIndex /login/
+DirectoryIndex index.html index.shtml index.htm Index.html Index.htm Index.shtml default.htm Default.htm default.html Default.html default.shtml Default.shtml page1.html index.pl index.cgi index.php index.php3 index.phtml home.htm home.html home.shtml index.wml index.pcgi quickstart.html
+
+Options -Indexes
